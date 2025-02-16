@@ -1,0 +1,161 @@
+/* Overall page styling */
+.about {
+  background: linear-gradient(
+    135deg,
+    rgba(10, 10, 10, 0.9),
+    rgba(20, 20, 20, 0.9)
+  );
+  color: white;
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem; /* Kichik ekranlar uchun font o'lchami */
+}
+
+/* Gradient text styling */
+h1,
+h2,
+p {
+  background: linear-gradient(to right, #ff5f6d, #ffc3a0);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+
+.about_title img {
+  width: 80px; /* Kichik ekranlar uchun rasm o'lchami */
+  margin: 0 auto; /* Markazga joylash */
+  display: block; /* Rasmni markazga joylash */
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* About section styling */
+.about_sections {
+  display: flex;
+  flex-direction: column; /* Mobil uchun ustun ko'rinishi */
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.about_left img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.about_right {
+  flex: 1;
+}
+
+.about_para {
+  margin-bottom: 20px;
+}
+
+.about_skill {
+  margin-bottom: 15px;
+}
+
+.about_skill p {
+  font-weight: 500;
+}
+
+.about_skill hr {
+  background: linear-gradient(to right, #ff5f6d, #ffc3a0);
+  height: 3px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Frontend and Backend skills headers */
+.frontend_skills,
+.backend_skills {
+  margin-bottom: 30px;
+}
+
+.frontend_skills h2,
+.backend_skills h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Achievements Section */
+.about_achievements {
+  display: flex;
+  flex-direction: column; /* Mobil uchun ustun ko'rinishi */
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center; /* Markazga joylash */
+}
+
+.about_achievement {
+  text-align: center;
+}
+
+.about_achievement h1 {
+  font-size: 2.5rem; /* Kichik ekranlar uchun font o'lchami */
+  margin-bottom: 10px;
+}
+
+.about_achievement p {
+  font-size: 1rem; /* Kichik ekranlar uchun font o'lchami */
+}
+
+hr {
+  border-top: 2px solid #ff5f6d;
+  margin: 20px 0;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablet devices (768px and above) */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .about_sections {
+    flex-direction: row; /* Planshetlar uchun qator ko'rinishi */
+  }
+
+  .about_achievements {
+    flex-direction: row; /* Planshetlar uchun qator ko'rinishi */
+  }
+
+  .about_title img {
+    width: 100px;
+  }
+
+  .about_achievement h1 {
+    font-size: 3rem;
+  }
+
+  .about_achievement p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Desktop devices (1024px and above) */
+@media (min-width: 1024px) {
+  .about {
+    padding: 40px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .about_title img {
+    margin-left: 650px; /* Faqat katta ekranlar uchun */
+  }
+
+  .about_sections {
+    gap: 40px;
+  }
+
+  .about_achievements {
+    gap: 40px;
+  }
+}

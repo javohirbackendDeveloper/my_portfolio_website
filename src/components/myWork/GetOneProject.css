@@ -1,0 +1,135 @@
+/* Modal overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85); /* Darker background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  transition: background 0.3s ease;
+}
+
+/* Modal container */
+.modal-container {
+  background: #1e1e1e; /* Dark background for the modal */
+  padding: 30px;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 800px;
+  position: relative;
+  overflow: hidden;
+  animation: modal-animation 0.3s ease-out;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6); /* Shadow for depth */
+}
+
+/* Close button */
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #ff6b6b;
+  transition: color 0.3s ease;
+}
+
+.modal-close:hover {
+  color: #ff0000;
+}
+
+/* Modal image */
+.modal-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+/* Modal content */
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff; /* Text color */
+  font-family: "Arial", sans-serif;
+  text-align: center;
+}
+
+/* Modal details (text and links) */
+.modal-details {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.modal-details p {
+  margin: 10px 0;
+  font-weight: bold;
+  font-size: 1.1rem; /* Improved font size */
+  color: #ddd; /* Slightly lighter color for text */
+}
+
+.modal-details p:first-child {
+  margin-top: 20px;
+  color: #ff6b6b; /* Color for "Open in Browser" */
+}
+
+.modal-details a {
+  color: #ff6b6b;
+  font-size: 1.5rem;
+  margin: 15px 0;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.modal-details a:hover {
+  color: #fff;
+  transform: scale(1.1); /* Slight scaling on hover */
+}
+
+.modal-details a svg {
+  margin-left: 8px;
+  transition: margin-left 0.3s ease;
+}
+
+.modal-details a:hover svg {
+  margin-left: 12px; /* Icon moves when hovered */
+}
+
+/* Animation for modal opening */
+@keyframes modal-animation {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .modal-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .modal-close {
+    font-size: 1.5rem;
+  }
+
+  .modal-details a {
+    font-size: 1.3rem;
+  }
+
+  .modal-details p {
+    font-size: 1rem;
+  }
+}

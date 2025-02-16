@@ -1,0 +1,203 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+}
+
+/* Footer Container */
+.footer {
+  background: linear-gradient(45deg, #3e2a47, #2d3e4f, #141d24);
+  color: white;
+  padding: 2rem 1rem; /* Mobil uchun padding qisqartirildi */
+}
+
+.footer_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.top_left {
+  flex: 1;
+  max-width: 100%; /* Mobil uchun to'liq kenglik */
+  margin-right: 0; /* Mobil uchun margin olib tashlandi */
+  text-align: center; /* Markazga joylash */
+}
+
+.top_left img {
+  width: 150px; /* Mobil uchun rasm o'lchami */
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.top_left p {
+  font-size: 1rem; /* Mobil uchun font o'lchami */
+  color: #d3d3d3;
+}
+
+.top_right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Markazga joylash */
+  justify-content: center;
+  margin-top: 1rem; /* Mobil uchun margin qo'shildi */
+}
+
+.footer_email {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.footer_email input {
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: none;
+  margin-left: 1rem;
+  width: 200px; /* Mobil uchun input kengligi */
+  font-size: 1rem;
+}
+
+.footer_subscribe {
+  background-color: #4caf50;
+  color: white;
+  padding: 0.8rem 1.5rem; /* Mobil uchun padding qisqartirildi */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem; /* Mobil uchun font o'lchami */
+}
+
+.footer_subscribe:hover {
+  background-color: #45a049;
+}
+
+/* Bottom Section */
+.footer_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 1px solid #ddd;
+  padding-top: 1rem;
+}
+
+.footer_bottom_left {
+  font-size: 0.9rem;
+  text-align: center; /* Markazga joylash */
+  margin-bottom: 1rem; /* Mobil uchun margin qo'shildi */
+}
+
+.footer_bottom_right {
+  display: flex;
+  justify-content: center; /* Markazga joylash */
+  flex-wrap: wrap;
+}
+
+.footer_bottom_right p {
+  display: inline-block;
+  margin: 0 1rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer_bottom_right p:hover {
+  color: #4caf50;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablet devices (768px and above) */
+@media (min-width: 768px) {
+  .footer {
+    padding: 3rem 2rem; /* Planshetlar uchun padding oshirildi */
+  }
+
+  .top_left {
+    max-width: 50%; /* Planshetlar uchun yarim kenglik */
+    margin-right: 2rem; /* Planshetlar uchun margin qo'shildi */
+    text-align: left; /* Matnni chapga joylash */
+  }
+
+  .top_left img {
+    width: 200px; /* Planshetlar uchun rasm o'lchami */
+    height: 200px;
+  }
+
+  .top_left p {
+    font-size: 1.1rem; /* Planshetlar uchun font o'lchami */
+  }
+
+  .top_right {
+    align-items: flex-end; /* Planshetlar uchun o'ngga joylash */
+  }
+
+  .footer_email input {
+    width: 250px; /* Planshetlar uchun input kengligi */
+  }
+
+  .footer_subscribe {
+    padding: 1rem 2rem; /* Planshetlar uchun padding oshirildi */
+  }
+
+  .footer_bottom_left {
+    text-align: left; /* Planshetlar uchun matnni chapga joylash */
+    margin-bottom: 0; /* Planshetlar uchun margin olib tashlandi */
+  }
+
+  .footer_bottom_right {
+    justify-content: flex-end; /* Planshetlar uchun o'ngga joylash */
+  }
+}
+
+/* Desktop devices (1024px and above) */
+@media (min-width: 1024px) {
+  .footer {
+    padding: 4rem 2rem; /* Desktoplar uchun padding oshirildi */
+  }
+
+  .top_left {
+    max-width: 50%; /* Desktoplar uchun yarim kenglik */
+    margin-right: 2rem; /* Desktoplar uchun margin qo'shildi */
+  }
+
+  .top_left img {
+    width: 200px; /* Desktoplar uchun rasm o'lchami */
+    height: 200px;
+  }
+
+  .top_left p {
+    font-size: 1.1rem; /* Desktoplar uchun font o'lchami */
+  }
+
+  .top_right {
+    align-items: flex-end; /* Desktoplar uchun o'ngga joylash */
+  }
+
+  .footer_email input {
+    width: 300px; /* Desktoplar uchun input kengligi */
+  }
+
+  .footer_subscribe {
+    padding: 1rem 2rem; /* Desktoplar uchun padding oshirildi */
+  }
+
+  .footer_bottom_left {
+    text-align: left; /* Desktoplar uchun matnni chapga joylash */
+    margin-bottom: 0; /* Desktoplar uchun margin olib tashlandi */
+  }
+
+  .footer_bottom_right {
+    justify-content: flex-end; /* Desktoplar uchun o'ngga joylash */
+  }
+}

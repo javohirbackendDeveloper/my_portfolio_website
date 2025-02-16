@@ -1,0 +1,132 @@
+/* General styling for navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333; /* Dark background */
+  padding: 15px 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+
+.navbar img {
+  height: 80px;
+  border-radius: 50%; /* Increased size for the logo */
+}
+
+.nav_menu {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.nav_menu li {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for list items */
+.nav_menu li:hover {
+  color: #00bcd4; /* Modern cyan color */
+  transform: translateY(-5px); /* Slightly lift the item */
+}
+
+/* Styling for the Connect with me button */
+.nav_connect {
+  padding: 12px 30px;
+  background: linear-gradient(90deg, #ff7b00, #ffbf00);
+  font-weight: 700;
+  border-radius: 50px;
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  color: white; /* Explicitly set text color to white */
+}
+
+/* Hover effect for the Connect button */
+.nav_connect:hover {
+  background: linear-gradient(
+    90deg,
+    #ff5722,
+    #ffc107
+  ); /* A darker gradient on hover */
+  transform: scale(1.1); /* Scale up the button */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  color: white; /* Ensure text color stays white on hover */
+}
+
+.navbar .nav_connect {
+  margin-left: 20px;
+}
+
+.anchor_link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Optional: Styling for the p element inside nav_connect */
+.nav_connect p {
+  color: white; /* Ensure text is white */
+  margin: 0; /* Remove extra space from p tag */
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.tableContentClose {
+  display: none;
+}
+.tableContentOpen {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    margin: 20px 50px;
+  }
+  .nav_connect {
+    display: none;
+  }
+  .tableContentOpen {
+    display: block;
+    position: fixed;
+    right: 30px;
+  }
+  .tableContentClose {
+    display: block;
+    position: relative;
+    top: 30px;
+    left: 290px;
+    width: 30px;
+  }
+
+  .nav_menu {
+    position: fixed;
+    flex-direction: column;
+    align-items: start;
+    top: 0;
+    gap: 30px;
+    background-color: #1f0016;
+    width: 350px;
+    height: 100%;
+    z-index: 2;
+    transition: right 0.5s;
+    right: -350px;
+    padding: 20px; /* Add padding to push the items away from the left edge */
+    text-align: left; /* Align the list items to the left */
+  }
+
+  .nav-menu li {
+    font-size: 30px;
+    padding-left: 100px;
+    flex-direction: row;
+    gap: 20px;
+  }
+}
