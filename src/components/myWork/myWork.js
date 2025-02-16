@@ -3,7 +3,7 @@ export const projects = [
     id: "1",
     name: "Crm for education centers",
     image: "./crm.png",
-    url: "https://crmmmm.netlify.app/",
+    url: "https://crmsystemuz.netlify.app/",
     gitHubUrl: "https://github.com/javohirbackendDeveloper/crm_backend",
     order: 1,
   },
