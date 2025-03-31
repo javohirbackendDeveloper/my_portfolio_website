@@ -9,10 +9,7 @@ function About() {
       </div>
       <div className="about_sections">
         <div className="about_left">
-          <img
-            src="https://t4.ftcdn.net/jpg/02/14/74/61/360_F_214746128_31JkeaP6rU0NzzzdFC4khGkmqc8noe6h.jpg"
-            alt=""
-          />
+          <img src="./myPicture.jpg" width="400px" height="500px" alt="" />
         </div>
         <div className="about_right">
           <div className="about_para">

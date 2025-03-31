@@ -5,10 +5,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 function Hero() {
   return (
     <div id="home" className="hero">
-      <img
-        src="https://t4.ftcdn.net/jpg/02/14/74/61/360_F_214746128_31JkeaP6rU0NzzzdFC4khGkmqc8noe6h.jpg"
-        alt="Javohir Abdusharipov"
-      />
+      <img src="./myPicture.jpg" alt="Javohir Abdusharipov" />
       <h1>I'm Javohir Abdusharipov, fullstack developer based in Uzbekistan</h1>
       <p>
         I am a fullstack developer from Uzbekistan, I have 1 year of experience
