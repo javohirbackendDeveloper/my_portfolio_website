@@ -1,5 +1,3 @@
-Abdusharipov_Javohir_resume;
-
 import React from "react";
 import "./Hero.css";
 import AnchorLink from "react-anchor-link-smooth-scroll";
@@ -8,11 +6,11 @@ function Hero() {
   const handleDownloadResume = () => {
     const resumeUrl =
       "https://my-portfolio-website-six-xi.vercel.app/" +
-      "/Javohir_Abdusharipov_Resume.docx";
+      "/Abdusharipov_Javohir_resume.docx";
 
     const link = document.createElement("a");
     link.href = resumeUrl;
-    link.download = "Javohir_Abdusharipov_Resume.docx";
+    link.download = "Abdusharipov_Javohir_resume.docx";
 
     document.body.appendChild(link);
     link.click();
