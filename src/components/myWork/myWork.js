@@ -47,4 +47,12 @@ export const projects = [
     url: "",
     order: 6,
   },
+  {
+    id: "7",
+    name: "Online hr website",
+    image: "./online_hr.png",
+    gitHubUrl: "https://github.com/javohirbackendDeveloper/jobs_apply_backend",
+    url: "https://jobs-apply-frontend-r71n.vercel.app/",
+    order: 6,
+  },
 ];
