@@ -17,13 +17,20 @@ export const projects = [
     order: 8,
   },
   {
+    id: "10",
+    name: "TezBuy e-commerce backend with microservices",
+    image: "./tezbuyBackend.png",
+    gitHubUrl: "https://github.com/javohirbackendDeveloper/e-commerce-backend",
+    order: 10,
+  },
+  {
     id: "9",
     name: "Tezbuy main website",
     image: "./tezbuyMainWebsite.png",
     url: "https://tezbuy-user-panel.vercel.app/",
     gitHubUrl:
       "https://github.com/javohirbackendDeveloper/e-commerce-user-panel",
-    order: 9,
+    order: 10,
   },
   {
     id: "2",
