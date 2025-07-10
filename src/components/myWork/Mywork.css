@@ -80,6 +80,21 @@
   color: #fff;
 }
 
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.work_name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  background-color: rgb(99, 255, 138);
+  text-align: center;
+}
+
 /* Media Queries for Responsive Design */
 @media (min-width: 768px) {
   .mywork_title h1 {

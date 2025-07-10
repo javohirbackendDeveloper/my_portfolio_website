@@ -45,6 +45,7 @@ function Mywork() {
       <div className="mywork_container">
         {currentProjects.map((work) => (
           <div key={work.id} className="card">
+            <span className="work_name">{work.name}</span>
             <img
               onClick={() => handleClick(work)}
               src={work.image}
