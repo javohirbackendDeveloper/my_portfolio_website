@@ -11,7 +11,6 @@ function Contact() {
     setResult("Sending....");
     const formData = new FormData(event.target);
 
-    // To'g'ri API kalitini kiritganingizni tekshirib chiqing
     formData.append("access_key", "26e7f5f8-0bd4-49ab-a9ac-1e462f0a44e1");
 
     try {
@@ -27,7 +26,7 @@ function Contact() {
         event.target.reset();
       } else {
         console.log("Error", data);
-        setResult(data.message); // Xatolikni ko'rsatish
+        setResult(data.message);
       }
     } catch (error) {
       // Agar tarmoq xatoliklari bo'lsa

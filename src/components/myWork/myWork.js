@@ -8,6 +8,24 @@ export const projects = [
     order: 1,
   },
   {
+    id: "8",
+    name: "TezBuy e-commerce admin panel",
+    image: "./tezbuyAdminPanel.png",
+    url: "https://e-commerce-admin-panel-indol.vercel.app/dashboard",
+    gitHubUrl:
+      "https://github.com/javohirbackendDeveloper/e-commerce-admin-panel",
+    order: 8,
+  },
+  {
+    id: "9",
+    name: "Tezbuy main website",
+    image: "./tezbuyMainWebsite.png",
+    url: "https://tezbuy-user-panel.vercel.app/",
+    gitHubUrl:
+      "https://github.com/javohirbackendDeveloper/e-commerce-user-panel",
+    order: 9,
+  },
+  {
     id: "2",
     name: "It market website",
     image: "./it_market.png",
