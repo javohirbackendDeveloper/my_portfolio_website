@@ -33,6 +33,14 @@ export const projects = [
     order: 10,
   },
   {
+    id: "11",
+    name: "Unibox chat sayti",
+    image: "./uniboxChat.png",
+    url: "https://unibox-frontend-spxn.vercel.app/",
+    gitHubUrl: "https://github.com/javohirbackendDeveloper/unibox_backend",
+    order: 11,
+  },
+  {
     id: "2",
     name: "It market website",
     image: "./it_market.png",
