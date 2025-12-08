@@ -1,5 +1,13 @@
 export const projects = [
   {
+    id: "12",
+    name: "Private Website for WebFlow Company",
+    image: "./webflow.png",
+    url: "https://web-flow-ten.vercel.app/",
+    gitHubUrl: "https://github.com/javohirbackendDeveloper/WebFlow",
+    order: 12,
+  },
+  {
     id: "1",
     name: "Crm for education centers",
     image: "./crm.png",
